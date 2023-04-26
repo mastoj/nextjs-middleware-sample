@@ -6,7 +6,7 @@ type Props = {};
 const LogOut = (props: Props) => {
   // handle click should update a cookie with the user name and reload page
   const handleClick = () => {
-    document.cookie = `name=";expires=Thu, 01 Jan 1970 00:00:01 GMT";`;
+    document.cookie = `name=`;
     window.location.reload();
   };
 
