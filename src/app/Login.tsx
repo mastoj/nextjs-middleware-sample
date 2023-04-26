@@ -20,7 +20,11 @@ const Login = (props: Props) => {
       className="flex gap-2 justify-center items-center"
     >
       <label>User name: </label>
-      <input className="h-9 rounded p-2" onChange={handleChange} />
+      <input
+        className="h-9 rounded p-2 bg-white text-black"
+        onChange={handleChange}
+        value={name}
+      />
       <button
         type="submit"
         className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
