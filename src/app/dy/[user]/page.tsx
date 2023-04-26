@@ -1,3 +1,4 @@
+import MainPage from "@/app/MainPage";
 import React from "react";
 
 type Props = {
@@ -11,7 +12,7 @@ export const generateStaticParams = () => {
 };
 
 const page = (props: Props) => {
-  return <div>Hello {props.params.user}</div>;
+  return <MainPage name={props.params.user} />;
 };
 
 export default page;
